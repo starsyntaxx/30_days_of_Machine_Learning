@@ -1,24 +1,22 @@
-🧠 30 Days of Machine Learning Models
+##30 Days of Machine Learning Models
 
 «From "I can use it" to "I understand why it works."»
 
-A 30-day deep dive into Machine Learning models, their mathematical foundations, assumptions, implementation, hyperparameters, tuning, diagnostics, and interpretability.
+A 30-day deep dive into Machine Learning models — exploring their intuition, mathematics, assumptions, implementation, hyperparameters, tuning, diagnostics, and interpretability.
 
-This isn't a challenge to simply learn how to call ".fit()".
+This is not just a challenge to use ML models.
 
-The goal is to understand what happens underneath the model, why it works, when it works, when it fails, and how to make informed decisions when working with real-world data.
-
-Each day, I'll learn, implement, experiment, document, and teach what I've learned through a corresponding Medium article.
+It is a challenge to understand why they work, when they work, when they fail, and how to make better decisions when working with them.
 
 ---
 
-🎯 The Goal
+#🎯 Goal
 
-By the end of these 30 days, I want to be able to take an unfamiliar dataset and confidently reason through:
+By the end of these 30 days, I want to be able to take an unfamiliar dataset and confidently go from:
 
 Understand the Data
        ↓
-Define the Problem
+Define the ML Problem
        ↓
 Choose an Appropriate Model
        ↓
@@ -26,26 +24,434 @@ Understand the Mathematics
        ↓
 Implement the Model
        ↓
-Tune the Hyperparameters
+Tune the Model
        ↓
-Diagnose Model Behaviour
+Diagnose Its Behaviour
        ↓
 Interpret the Results
        ↓
 Experiment & Improve
        ↓
-Explain the Model
+Explain It Clearly
 
-The goal isn't to memorize algorithms.
+The goal is not simply to know the syntax of "fit()" and "predict()".
 
-It's to develop a mental model for Machine Learning.
+The goal is to understand what happens under the hood.
 
 ---
 
-🗺️ What I'll Explore
+# What I Will Explore
 
-Machine Learning models will be explored through their major families.
+Throughout the challenge, I will study different Machine Learning model families, including:
 
+- Linear Models
+- Distance-Based Models
+- Tree-Based Models
+- Probabilistic Models
+- Kernel-Based Models
+- Neural Models
+- Clustering Models
+- Dimensionality Reduction
+- Ensemble Methods
+- Model Selection & Optimization
+
+---
+
+# Model Learning Framework
+
+Every major model will be studied using the same framework.
+
+1. Problem
+
+What problem does this model solve?
+
+- Classification?
+- Regression?
+- Clustering?
+- Dimensionality reduction?
+- Anomaly detection?
+
+2. Data Assumptions
+
+What does the model assume about the data?
+
+Understanding assumptions helps determine when a model is appropriate — and when it isn't.
+
+3. Intuition
+
+Explain how the model works without mathematics first.
+
+If I cannot explain the model simply, I probably don't understand it well enough.
+
+4. Mathematics
+
+Go beneath the abstraction.
+
+Explore:
+
+- Objective functions
+- Loss functions
+- Probability
+- Geometry
+- Optimization
+- Gradients
+- Regularization
+- Statistical assumptions
+
+5. From Scratch
+
+Implement the core idea using Python/NumPy where practical.
+
+The purpose isn't to recreate an entire production library.
+
+It is to understand the mechanics.
+
+6. Scikit-Learn / Framework Implementation
+
+Implement the model using established libraries.
+
+For example:
+
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+predictions = model.predict(X_test)
+
+The goal is to understand what the abstraction is doing rather than blindly relying on it.
+
+7. Hyperparameters
+
+Identify the important hyperparameters and understand:
+
+- What they control
+- What happens when they increase
+- What happens when they decrease
+- How they affect bias and variance
+- When they can cause overfitting or underfitting
+
+8. Tuning
+
+Experiment with different approaches:
+
+- Grid Search
+- Random Search
+- Bayesian Optimization
+- Optuna
+
+9. Diagnostics
+
+Investigate:
+
+- Underfitting
+- Overfitting
+- Bias
+- Variance
+- Training vs validation performance
+- Error patterns
+- Model limitations
+
+10. Interpretability
+
+Understand what the model has learned.
+
+Depending on the model:
+
+- Coefficients
+- Feature importance
+- Decision boundaries
+- SHAP
+- Partial dependence
+- Model-specific explanations
+
+11. Experiment
+
+Change one or two important factors and observe what happens.
+
+For example:
+
+«What happens when "max_depth" increases?»
+
+«What happens when "k" changes in KNN?»
+
+«What happens when regularization becomes stronger?»
+
+The experiment is where theory meets behaviour.
+
+12. Teach
+
+Finally, explain the model in a Medium article.
+
+If I can teach it clearly, I should have a much stronger understanding of it.
+
+---
+
+# 30-Day Roadmap
+
+Day| Topic
+01| Introduction to AI, ML & Data Science
+02| Types of Data & ML Problems
+03| ML Model Taxonomy
+04| Linear Regression
+05| Logistic Regression
+06| Regularization: Ridge & Lasso
+07| K-Nearest Neighbors
+08| Naive Bayes
+09| Decision Trees
+10| Random Forest
+11| Gradient Boosting
+12| XGBoost
+13| LightGBM / CatBoost
+14| Support Vector Machines
+15| K-Means
+16| DBSCAN
+17| Gaussian Mixture Models
+18| Principal Component Analysis
+19| Anomaly Detection
+20| Model Selection
+21| Hyperparameter Tuning
+22| Bias, Variance & Overfitting
+23| Perceptron
+24| Neural Networks
+25| Backpropagation
+26| Optimization & Neural Network Training
+27| Convolutional Neural Networks
+28| RNNs, LSTMs & GRUs
+29| Transformers
+30| Final Model Selection & End-to-End Project
+
+---
+
+# Repository Structure
+
+30-days-of-ml-models/
+│
+├── README.md
+├── requirements.txt
+├── LICENSE
+├── .gitignore
+│
+├── 00-introduction/
+│   ├── 01-what-is-ai.md
+│   ├── 02-ai-vs-ml-vs-ds.md
+│   ├── 03-state-of-machine-learning.md
+│   ├── 04-types-of-data.md
+│   └── 05-model-taxonomy.md
+│
+├── 01-linear-models/
+│   ├── linear-regression/
+│   ├── logistic-regression/
+│   └── regularization/
+│
+├── 02-distance-based/
+│   ├── knn/
+│   └── kmeans/
+│
+├── 03-tree-based/
+│   ├── decision-trees/
+│   ├── random-forest/
+│   ├── gradient-boosting/
+│   ├── xgboost/
+│   ├── lightgbm/
+│   └── catboost/
+│
+├── 04-probabilistic/
+│   └── naive-bayes/
+│
+├── 05-kernel-based/
+│   └── svm/
+│
+├── 06-neural-models/
+│   ├── perceptron/
+│   ├── neural-networks/
+│   ├── cnn/
+│   ├── rnn/
+│   ├── lstm/
+│   └── transformers/
+│
+├── 07-unsupervised-learning/
+│   ├── dbscan/
+│   ├── gmm/
+│   └── pca/
+│
+├── 08-model-selection/
+│   ├── cross-validation/
+│   ├── hyperparameter-tuning/
+│   └── optuna/
+│
+├── experiments/
+│   ├── bias-vs-variance/
+│   ├── overfitting/
+│   ├── regularization/
+│   └── hyperparameter-effects/
+│
+├── notes/
+│   ├── mathematics/
+│   ├── statistics/
+│   ├── linear-algebra/
+│   └── optimization/
+│
+└── progress/
+    └── roadmap.md
+
+---
+
+# Experiments
+
+Understanding a model isn't complete without experimentation.
+
+This repository will contain experiments exploring questions such as:
+
+- How does increasing model complexity affect performance?
+- What causes a model to overfit?
+- How does regularization affect coefficients?
+- How does the number of neighbours affect KNN?
+- How does tree depth affect Decision Trees?
+- How do ensemble models reduce variance?
+- How do different hyperparameters change model behaviour?
+- How does the amount of training data affect performance?
+
+---
+
+📐 Mathematical Foundations
+
+Machine Learning models are built on mathematics.
+
+This repository will therefore also contain notes covering:
+
+Statistics
+
+- Probability distributions
+- Conditional probability
+- Bayes' theorem
+- Expectation
+- Variance
+- Covariance
+- Correlation
+- Maximum likelihood
+
+Linear Algebra
+
+- Vectors
+- Matrices
+- Matrix multiplication
+- Eigenvalues & eigenvectors
+- Dot products
+- Projections
+- Vector spaces
+
+Calculus
+
+- Derivatives
+- Partial derivatives
+- Gradients
+- Chain rule
+- Optimization
+
+Optimization
+
+- Gradient Descent
+- Stochastic Gradient Descent
+- Learning rates
+- Convex vs non-convex optimization
+- Local vs global minima
+
+---
+
+🛠️ Tools
+
+The challenge will primarily use:
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-Learn
+- XGBoost
+- LightGBM
+- CatBoost
+- Optuna
+- TensorFlow / Keras
+- Jupyter / Google Colab
+
+---
+
+#✍️ Medium Series
+
+Each major learning milestone will be documented through a Medium article.
+
+The articles will focus on explaining models from first principles rather than simply presenting code.
+
+Medium Series: Coming soon.
+
+---
+
+#Progress
+
+Day| Topic| Status
+01| Introduction to AI, ML & Data Science| ⬜
+02| Types of Data & ML Problems| ⬜
+03| ML Model Taxonomy| ⬜
+04| Linear Regression| ⬜
+05| Logistic Regression| ⬜
+06| Ridge & Lasso| ⬜
+07| KNN| ⬜
+08| Naive Bayes| ⬜
+09| Decision Trees| ⬜
+10| Random Forest| ⬜
+...| ...| ⬜
+30| Final Project| ⬜
+
+---
+
+🎯 Why I'm Doing This
+
+It is easy to use Machine Learning libraries.
+
+It is much harder to understand what is happening underneath them.
+
+I want to move beyond:
+
+«"I know how to use this model."»
+
+towards:
+
+«"I understand why this model works, what assumptions it makes, how its mathematics shapes its behaviour, how its hyperparameters affect it, why it fails, and when I should choose it."»
+
+That is the goal of these 30 days.
+
+---
+
+# The Challenge
+
+30 Days.
+
+Multiple model families.
+
+Mathematics.
+
+Experiments.
+
+Implementation.
+
+Failures.
+
+Documentation.
+
+Teaching.
+
+The ultimate goal:
+
+«From "I can use it" to "I understand why it works."»
+
+---
+
+⭐ Follow the Journey
+
+If you're also learning Machine Learning, feel free to explore the repository, follow the experiments, and learn along with me.
+
+30 Days of Machine Learning Models — let's understand what is actually happening under the hood.
 1. Linear Models
 
 - Linear Regression
