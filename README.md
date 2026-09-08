@@ -1,4 +1,4 @@
-# 🧠 30 Days of Machine Learning Models
+# 30 Days of Machine Learning Models
 
 > **From "I can use it" to "I understand why it works."**
 
@@ -12,7 +12,7 @@ Each day, I'll learn, implement, experiment, document, and teach what I've learn
 
 ---
 
-## 🎯 The Goal
+## The Goal
 
 By the end of these 30 days, I want to be able to take an unfamiliar dataset and confidently reason through:
 
@@ -44,7 +44,7 @@ It's to develop a **mental model for Machine Learning**.
 
 ---
 
-# 🗺️ What I'll Explore
+# What I'll Explore
 
 Machine Learning models will be explored through their major families.
 
