@@ -1,6 +1,6 @@
-##30 Days of Machine Learning Models
+# 30 Days of Machine Learning Models
 
-«From "I can use it" to "I understand why it works."»
+"From "I can use it" to "I understand why it works."
 
 A 30-day deep dive into Machine Learning models — exploring their intuition, mathematics, assumptions, implementation, hyperparameters, tuning, diagnostics, and interpretability.
 
@@ -10,7 +10,7 @@ It is a challenge to understand why they work, when they work, when they fail, a
 
 ---
 
-#🎯 Goal
+# Goal
 
 By the end of these 30 days, I want to be able to take an unfamiliar dataset and confidently go from:
 
